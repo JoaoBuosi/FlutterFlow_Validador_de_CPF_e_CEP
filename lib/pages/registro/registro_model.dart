@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'registro_widget.dart' show RegistroWidget;
 import 'package:flutter/material.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class RegistroModel extends FlutterFlowModel<RegistroWidget> {
   ///  State fields for stateful widgets in this page.
@@ -37,6 +38,7 @@ class RegistroModel extends FlutterFlowModel<RegistroWidget> {
   // State field(s) for cpf widget.
   FocusNode? cpfFocusNode;
   TextEditingController? cpfTextController;
+  late MaskTextInputFormatter cpfMask;
   String? Function(BuildContext, String?)? cpfTextControllerValidator;
   // Stores action output result for [Custom Action - validarCPF] action in Button widget.
   bool? outputAcao;
